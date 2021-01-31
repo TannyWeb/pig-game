@@ -13,18 +13,18 @@
 
 
   <div
-    class="wrapper w-2/4 absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 flex h-2/4 rounded-lg shadow-xl">
+    class="wrapper w-3/4 lg:w-2/4 absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 flex h-2/4 rounded-lg shadow-xl flex-col lg:flex-row">
     <div
-      class="newGame absolute left-2/4 transform -translate-x-2/4 bg-white bg-opacity-80 cursor-pointer shadow-lg top-4 rounded-xl py-2 px-5 uppercase text-xs hover:bg-white transition-all ease-in-out">
+      class="newGame absolute transform bg-white bg-opacity-80 cursor-pointer shadow-lg rounded-xl py-2 px-5 uppercase text-xs hover:bg-white transition-all ease-in-out top-2/4 left-1/4 -translate-y-2/4 lg:top-14  lg:left-2/4 lg:-translate-x-2/4  ">
       new game</div>
     <div
-      class="rollDice absolute left-2/4 transform -translate-x-2/4 bg-white  bg-opacity-80 cursor-pointer shadow-lg top-2/3 rounded-xl py-2 px-5 uppercase text-xs">
+      class="rollDice absolute transform bg-white  bg-opacity-80 cursor-pointer shadow-lg rounded-xl py-2 px-5 uppercase text-xs  hover:bg-white transition-all ease-in-out top-2/4 -translate-y-2/4 left-2/4 lg:top-2/3 lg:-translate-x-2/4 lg:left-2/4  ">
       roll dice</div>
     <div
-      class="hold absolute left-2/4 transform -translate-x-2/4 bg-white bg-opacity-80 cursor-pointer shadow-lg top-3/4 rounded-xl py-2 px-5 uppercase text-xs">
+      class="hold absolute  transform -translate-x-2/4 bg-white bg-opacity-80 cursor-pointer shadow-lg  rounded-xl py-2 px-5 uppercase text-xs hover:bg-white transition-all ease-in-out top-2/4 -translate-y-2/4 left-3/4 lg:top-3/4 lg:-translate-x-2/4 lg:left-2/4 ">
       hold</div>
 
-    <div class="left w-2/4 bg-white bg-opacity-60 flex flex-col justify-center items-center">
+    <div class="left w-full flex-1 lg:w-2/4 bg-white bg-opacity-60 flex flex-col justify-center items-center">
       <div class="player1 flex-1 w-full flex justify-center items-center flex-col">
         <h2 class="uppercase text-2xl mb-2">Player 1</h2>
         <div class="score text-pink-700 text-5xl">0</div>
@@ -38,7 +38,7 @@
       </div>
     </div>
 
-    <div class="right w-2/4 bg-white bg-opacity-30  flex flex-col justify-center items-center">
+    <div class="right w-full flex-1 lg:w-2/4 bg-white bg-opacity-30  flex flex-col justify-center items-center">
       <div class="player2 flex-1 w-full flex justify-center items-center flex-col">
         <h2 class="uppercase text-2xl mb-2">Player 2</h2>
         <div class="score text-pink-700 text-5xl">0</div>
