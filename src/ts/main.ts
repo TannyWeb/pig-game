@@ -1,4 +1,5 @@
 import '../sass/styles.sass';
+import { hold } from './components/hold/hold';
 
 import { roll } from './components/roll/roll';
 
@@ -9,5 +10,5 @@ const add = (x: number, y: number): number => {
 };
 
 roll();
-
+hold();
 console.log(add(3, 3));

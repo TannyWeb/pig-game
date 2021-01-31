@@ -16,6 +16,7 @@ export const displayDice = () => {
 		console.log(diceNumber);
 		console.log('switch player');
 		switchPlayer();
+		currentScore.textContent = '0';
 	} else {
 		console.log(diceNumber);
 		console.log('do not switch player');
