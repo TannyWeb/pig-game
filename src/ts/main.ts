@@ -1,9 +1,13 @@
 import '../sass/styles.sass';
 
-console.log('typescrit worked??')
+import { roll } from './components/roll/roll';
+
+console.log('typescrit worked??');
 
 const add = (x: number, y: number): number => {
-    return x + y;
-}
+	return x + y;
+};
+
+roll();
 
 console.log(add(3, 3));
