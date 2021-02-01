@@ -13,13 +13,9 @@ export const displayDice = () => {
 	dicebtn.textContent = diceNumber.toString();
 
 	if (diceNumber == 1) {
-		console.log(diceNumber);
-		console.log('switch player');
 		switchPlayer();
 		currentScore.textContent = '0';
 	} else {
-		console.log(diceNumber);
-		console.log('do not switch player');
 		const currScoreAsNum = Number(currentScore.textContent);
 		currentScore.textContent = (currScoreAsNum + diceNumber).toString();
 	}
