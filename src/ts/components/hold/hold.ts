@@ -8,7 +8,5 @@ const holdbtn = document.querySelector('.hold') as HTMLElement;
 export const hold = () => {
 	holdbtn.addEventListener('click', () => {
 		addScore();
-		// switchPlayer();
-		// checkWinner();
 	});
 };

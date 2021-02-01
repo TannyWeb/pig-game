@@ -1,5 +1,6 @@
 import { switchPlayer } from '../switch/switchPlayer';
 import { displayWinner } from './displayWinner';
+import { stopGame } from './stopGame';
 
 export const addScore = () => {
 	const active = document.querySelector('.active');
@@ -19,6 +20,7 @@ export const addScore = () => {
 			console.log('show winner');
 
 			displayWinner(active);
+			stopGame();
 		}
 	}
 
