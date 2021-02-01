@@ -7,5 +7,7 @@ export const displayWinner = (className: Element) => {
 	className.classList.add('bg-green-400');
 	console.log('display winner');
 
-	displayWinnerDiv.textContent = 'congrats you are the winner';
+	const getPlayer = className.querySelector('h2').textContent;
+
+	displayWinnerDiv.textContent = `congrats ${getPlayer}, you are the winner`;
 };
