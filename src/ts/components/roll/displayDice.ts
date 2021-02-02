@@ -7,7 +7,7 @@ export const displayDice = () => {
 		'.active .currentScore .score'
 	) as HTMLElement;
 
-	const diceNumber = rollRandom();
+	const diceNumber: number = rollRandom();
 	showDice(diceNumber);
 
 	if (diceNumber == 1) {

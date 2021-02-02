@@ -1,4 +1,13 @@
-export const diceImgs = {
+interface DiceImgs {
+	one: string;
+	two: string;
+	three: string;
+	four: string;
+	five: string;
+	six: string;
+}
+
+export const diceImgs: DiceImgs = {
 	one:
 		'https://raw.githubusercontent.com/jonasschmedtmann/complete-javascript-course/master/07-Pig-Game/starter/dice-1.png',
 	two:
