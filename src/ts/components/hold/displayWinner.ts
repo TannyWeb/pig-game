@@ -1,5 +1,3 @@
-import { LoaderOptionsPlugin } from 'webpack';
-
 const displayWinnerDiv = document.querySelector('.displayWinner');
 export const displayWinner = (className: Element) => {
 	className.classList.add('winner');

@@ -1,7 +1,6 @@
+import { showDice } from '../dice/dice';
 import { switchPlayer } from '../switch/switchPlayer';
 import { rollRandom } from './randomDice';
-
-const dicebtn = document.querySelector('.diceNumber') as HTMLElement;
 
 export const displayDice = () => {
 	const currentScore = document.querySelector(
@@ -9,8 +8,7 @@ export const displayDice = () => {
 	) as HTMLElement;
 
 	const diceNumber = rollRandom();
-	dicebtn.style.display = 'block';
-	dicebtn.textContent = diceNumber.toString();
+	showDice(diceNumber);
 
 	if (diceNumber == 1) {
 		switchPlayer();
