@@ -4,8 +4,8 @@
 	"version": "1.0.0",
 	"scripts": {
 		"heroku-prebuild": "npm install --dev",
-		"dev": "cross-env NODE_ENV=development webpack-dev-server --progress --open",
-		"prod": "cross-env NODE_ENV=production webpack --progress --config webpack.prod.js",
+		"dev": "node_modules/cross-env/dist/bin/cross-env.j NODE_ENV=development webpack-dev-server --progress --open",
+		"prod": "node_modules/cross-env/dist/bin/cross-env.j NODE_ENV=production webpack --progress --config webpack.prod.js",
 		"heroku-postbuild": "npm run prod"
 	},
 	"engines": {
